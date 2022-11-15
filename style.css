@@ -1,0 +1,113 @@
+.box1 {
+    background-color: red;
+    width: 150px;
+    height: 150px;
+    transition: 200ms;
+    position: absolute;
+    display: block;
+    left: 180px;
+    top: 100px;
+}
+
+.box1:hover {
+    transform: scale(1.25) rotate(12deg);
+}
+
+.box2-outer {
+    border-style: solid;
+    width: 150px;
+    height: 150px;
+    position: absolute;
+    display: block;
+    left: 400px;
+    top: 100px;
+}
+
+.box2 {
+    background-color: red;
+    width: 90px;
+    height: 90px;
+    transition: 200ms;
+    position: relative;
+    top: calc(20%);
+    left: calc(20%)
+}
+
+.box2:hover {
+    background-color: rgb(127, 127, 187);
+    border-radius: 50%;
+}
+
+.box3 {
+    border-style: solid;
+    position: absolute;
+    padding: 75px;
+    left: 630px;
+    top: 100px;
+}
+
+.box3 > div {
+    position: absolute;
+    left: calc(60% - 75px);
+    top: calc(60% - 2px);
+    margin: -50px 5px;
+    width: 110px;
+    height: 25px;
+    background-color: black;
+}
+
+.box3 > div:last-child {
+    margin: -10px 5px;
+}
+
+.box3:hover {
+    background-color: black;
+}
+
+.box3:hover>div {
+    background-color: white;
+    transition: 500ms;
+}
+
+.box3:hover > div:first-child {
+    transform:rotate(45deg);
+    margin-top: -10px;
+}
+
+.box3:hover > div:last-child {
+    transform:rotate(-45deg);
+    margin-bottom: -10px;
+}
+
+.box4-outer {
+    border-style: solid;
+    width: 150px;
+    height: 150px;
+    position: absolute;
+    display: block;
+    left: 850px;
+    top: 100px;
+}
+
+.box4 {
+    background-color: red;
+    width: 90px;
+    height: 90px;
+    transition: 200ms;
+    position: relative;
+    top: calc(10%);
+    left: calc(20%)
+}
+
+.box4 p {
+    position: relative;
+    top: calc(40% - 5px);
+    left: calc(30% - 5px);
+    color: white;
+    font-size: 20px;
+}
+
+.box4:hover {
+    background-color: rgb(255, 151, 6);
+    transform: scale(1.25) rotate(12deg);
+}
